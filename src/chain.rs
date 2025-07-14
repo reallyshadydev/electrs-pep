@@ -120,13 +120,13 @@ pub fn genesis_hash(network: Network) -> BlockHash {
 pub fn bitcoin_genesis_hash(network: BNetwork) -> bitcoin::BlockHash {
     match network {
         BNetwork::Bitcoin => BlockHash::from_byte_array(hex_literal::hex!(
-            "1a91e3dace36e2be3bf030a65679fe821aa1d6ef92e7c9902eb318182c355691"
+            "37981c0c48b8d48965376c8a42ece9a0838daadb93ff975cb091f57f8c2a5faa"
         )),
         BNetwork::Testnet => BlockHash::from_byte_array(hex_literal::hex!(
-            "bb0a78264637406b6360aad926284d544d7049f45189db5664f3c4d07350559e"
+            "f9f4ea4ae7f6ea4c55040ede2019ba0a53e262f46ec9bce3dcda2cb11f96fc52"
         )),
         BNetwork::Regtest => BlockHash::from_byte_array(hex_literal::hex!(
-            "3d2160a3b5dc4a9d62e7e66a295f70313ac808440ef7400d6c0772171ce973a5"
+            "770975b0f98319520694563de107ff94fd501c0d1c16f3a405868faf36b51c28"
         )),
         BNetwork::Signet => BlockHash::from_byte_array(hex_literal::hex!(
             "9b7bce58999062b63bfb18586813c42491fa32f4591d8d3043cb4fa9e551541b"
